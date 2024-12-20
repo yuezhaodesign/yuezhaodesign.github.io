@@ -102,6 +102,7 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     transition: transform 0.3s ease;
+    border: 1px solid white;
 }
 .nav a:hover {
     background-color: pink;
@@ -132,6 +133,7 @@ label::after {
     background-color: pink;
     border-radius: 4vh;
     transition: 0.3s;
+    border: 1px solid white;
 }
 input {
     width: 0;
