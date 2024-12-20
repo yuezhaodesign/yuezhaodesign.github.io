@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.lato-thin {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.nav {
+    position: fixed;
+    height: 10vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    z-index: 99;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    margin: 0 0.5vw;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+.nav a:hover {
+    background-color: pink;
+    color: black;
+}
+.nav a:cliked {
+    background-color: pink;
+    color: black;
+    border-radius: 5px;
+}
+
+.content {
+    position: absolute;
+    width: 40vw;
+    height: auto;
+    margin: 60vh 5vw;
+}
+
+.content h1 {
+    font-size: 1rem;
+    color: #E7603F;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.work {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECF1F0;
+    margin: 0;
+    padding-bottom: 10vh;
+}
+
+.work h1 {
+    font-size: 3rem;
+    color: black;
+    font-weight: 500;
+    padding: 5vh 0;
+}
+
+.project {
+    width: 90vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2vh 5vw;
+}
+
+.project img {
+    width: 20vw;
+    height: 16vh;
+    margin: 2vh 2vw;
+    border-radius: 10px;
+    transition: border-radius 0.3s ease;
+}
+
+.project h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    width: 20vw;
+}
+
+.info {
+    width: 30vw;
+    height: auto;
+    margin-left:15vw;
+}
+
+.info h3 {
+    font-size: 1rem;
+    color: #E7603F;
+}
+.project:hover {
+    background-color: black;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+.project:hover > img {
+    border-radius: 120px;
+}
+
+.project:hover > h2,
+.project:hover > .info p {
+    color: white;
+}
+
+
+.discussion {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+}
+
+.discussion h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+    text-align: center; 
+}
+
+.post-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    flex-wrap: nowrap; 
+}
+
+.post-container::-webkit-scrollbar {
+    display: none;
+}
+
+.post {
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0 0 2vw;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    flex-shrink: 0; 
+}
+
+.post h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 2vw;
+}
+
+.post p {
+    font-size: 1rem;
+    padding: 0 2vw;
+}
+
+.contact {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding-bottom: 10vh;
+}
+
+.contact h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 5vh 0;
+    color: #E7603F;
+    margin: 0 0 0 5vw;
+}
+
+.contact p {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0 5vw;
+    margin:0;
+    transition: transform 0.5s ease;
+}
+.contact p:hover {
+    transform: translateX(5vw);
+}
