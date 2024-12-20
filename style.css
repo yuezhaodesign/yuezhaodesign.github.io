@@ -111,7 +111,7 @@ body {
 label {
     position: absolute;
     top: 3vh;
-    right: 45vw;
+    left: 5vw;
     display: inline-block;
     width: 15vh;
     height: 5vh;
