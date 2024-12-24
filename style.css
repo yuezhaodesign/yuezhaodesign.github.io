@@ -295,7 +295,7 @@ input:checked ~ .content2 {
 }
 .project:hover {
     background-color: black;
-    border-radius: 100px;
+    border-radius: 120px;
     cursor: pointer;
 }
 
@@ -382,8 +382,6 @@ input:checked ~ .content2 {
 
 
 
-
-
 .about {
     width: 100vw;
     height: auto;
@@ -406,6 +404,23 @@ input:checked ~ .content2 {
     font-size: 1.5rem;
     color: black;
     font-weight: 500;
+}
+
+.about a {
+    width: 10vw;
+    height: auto;
+    font-size: 1.5rem;
+    margin: 10vh 45vw;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.about a:hover {
+    background-color: pink;
+    color: black;
+    cursor: pointer;
 }
 
 .education {
@@ -514,4 +529,44 @@ input:checked ~ .content2 {
 .contact p:hover {
     transform: translateX(5vw);
     cursor: pointer;
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+}
+
+.ppt {
+    position: relative;
+    width: 90vw;
+    margin: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ppt img {
+    width: 90vw;
+    height: auto;
+}
+
+.switch {
+    width: 90vw;
+    height: 20vh;
+    padding: 0 5vw;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.switch a {
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.switch a:hover {
+    background-color: pink;
+    color: black;
 }

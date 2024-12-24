@@ -1,44 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Product Designer Portfolio - Yue Zhao 2024</title>
+    <title>Project - Supply</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    
     <div class="header">
-        <img src="src/head.jpg" alt="The head photo of Yue Zhao" id="head">
-        <p id="name">Yue Zhao</p>
-        <div id="nav">
-            <p class="nav-text" style="font-weight:bold" onclick="navigateTo('index.html')">Work</p>
-            <p class="nav-text" onclick="navigateTo('about.html')">About</p>
-            <p class="nav-text" onclick="navigateTo('resume-link')">Resume</p>
-        </div>
-
-        <div id="icons">
-            <a href="mailto:janie.zhaoy@gmail.com">
-                <img src="src/email.png" alt="Email" class="icon">
-            </a>
-            <a href="http://www.linkedin.com/in/yue-zhao-janie">
-                <img src="src/linkedin.png" alt="LinkedIn" class="icon">
-            </a>
-            <a href="https://github.com/yuezhaodesign">
-                <img src="src/github.png" alt="Github" class="icon">
-            </a>
-        </div>
-
-        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
-        <div class="mobile-menu">
-            <div class="nav-text" style="font-weight:bold" onclick="navigateTo('index.html')">Work</div>
-            <div class="nav-text" onclick="navigateTo('about.html')">About</div>
-            <div class="nav-text" onclick="navigateTo('resume-link')">Resume</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="project.html">Project</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
+  
 
 
-
-    <div class="work-content">
+    <div class="supply-ppt">
         <img src="src/su-title.jpg" alt="Supply">
         <img src="src/su-background.jpg" alt="Supply">
         <img src="src/su-pp1.jpg" alt="Supply">
@@ -57,9 +35,18 @@
     </div>
 
 
-    <div class="footer">
-        <p class="footer-text">© 2024 Yue Zhao. All rights reserved.</p>
+    <div class="switch">
+        <a href="pennplace.html">Previous: Penn Place</a>
+        <a href="skillshare.html">Next: Skillshare Dashboard</a>
     </div>
+
+    <div class="contact" id="contact">
+        <h1>[CONTACT]</h1>
+        <p onclick="window.location.href='mailto:janie.zhaoy@gmail.com'">EMAIL</p>
+        <p onclick="window.location.href='https://www.linkedin.com/in/yue-zhao-janie/'">LINKEDIN</p>
+        <p onclick="window.location.href='https://github.com/yuezhaodesign'">GITHUB</p>
+    </div>
+
 
     <script src="script.js"></script>
 
