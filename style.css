@@ -406,31 +406,26 @@ input:checked ~ .content2 {
     font-size: 1.5rem;
     color: black;
     font-weight: 500;
+    margin-left: 5vw;
 }
 
 .about a {
     width: 10vw;
     height: auto;
     font-size: 1.5rem;
+    font-weight: 600;
     margin: 10vh 45vw;
     padding: 10px 20px;
     border-radius: 30px;
     background-color: black;
     color: white;
     text-align: center;
+    text-decoration: none;
 }
 .about a:hover {
     background-color: pink;
     color: black;
     cursor: pointer;
-}
-
-.education {
-    position: relative;
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .about-wrapper {
@@ -467,15 +462,6 @@ input:checked ~ .content2 {
     height: 10vh;
     border-radius: 50%;
     margin-right: 2vw;
-}
-
-.work {
-    position: relative;
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 6vh;
 }
 
 .work-card {
