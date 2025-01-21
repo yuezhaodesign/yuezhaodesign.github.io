@@ -112,7 +112,7 @@ body {
 label {
     position: absolute;
     top: 3vh;
-    left: 50vw;
+    right: 5vw;
     display: inline-block;
     width: 15vh;
     height: 5vh;
@@ -396,17 +396,11 @@ input:checked ~ .content2 {
 
 .about h1 {
     font-size: 3rem;
-    color: black;
     font-weight: 500;
     padding: 10vh 0;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 1.5rem;
     color: black;
-    font-weight: 500;
-    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
 }
 
 .about a {
@@ -428,62 +422,16 @@ input:checked ~ .content2 {
     cursor: pointer;
 }
 
-.about-wrapper {
-    position: relative;
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
-    flex-wrap: nowrap;
-}
-
-.about-wrapper::-webkit-scrollbar {
-    display: none;
-}
-
-.edu-card {
-    width: auto;
-    height: auto;
+.line {
+    width: 90vw;
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 2vh 2vw;
-    margin-right: 2vw;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    flex-shrink: 0;
-}
-
-.edu-card img {
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50%;
-    margin-right: 2vw;
-}
-
-.work-card {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vh 2vw;
-    margin-right: 2vw;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    flex-shrink: 0;
-}
-
-.work-card img {
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50%;
-    margin-right: 2vw;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 5vw;
+    border-bottom: black 2px solid;
 }
 
 
