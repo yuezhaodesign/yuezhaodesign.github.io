@@ -485,24 +485,39 @@ input:checked ~ .content2 {
     height: auto;
 }
 
-.switch {
-    width: 90vw;
-    height: 20vh;
-    padding: 0 5vw;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+.ppt h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 6vw;
+    color:#E7603F;
 }
 
-.switch a {
-    padding: 5px 20px;
-    border-radius: 30px;
-    background-color: black;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
+.compare {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5vw;
 }
-.switch a:hover {
-    background-color: pink;
+
+.compare-item {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.compare-item img {
+    width: 39vw;
+    height: auto;
+}
+
+.compare-item p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 6vw;
     color: black;
 }
