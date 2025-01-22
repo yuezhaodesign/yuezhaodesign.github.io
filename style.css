@@ -478,6 +478,8 @@ input:checked ~ .content2 {
     margin: 10vh 5vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .ppt img {
@@ -490,6 +492,26 @@ input:checked ~ .content2 {
     font-weight: 600;
     padding: 0 6vw;
     color:#E7603F;
+}
+
+.ppt a {
+    width: 20vw;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10vh 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ppt a:hover {
+    background-color: pink;
+    color: black;
+    cursor: pointer;
 }
 
 .compare {
