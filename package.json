@@ -16,9 +16,10 @@
     "url": "https://github.com/yuezhaodesign/yuezhaodesign.github.io/issues"
   },
   "homepage": "https://github.com/yuezhaodesign/yuezhaodesign.github.io#readme",
-  "description": "",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.4",
     "tailwindcss": "^4.0.4"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
