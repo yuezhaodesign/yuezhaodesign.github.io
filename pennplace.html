@@ -10,18 +10,24 @@
   </head>
 
 
-<body class="bg-black text-white text-[18px] justify-center items-center flex flex-col w-screen">
-
+<body class="bg-white text-black text-[18px] justify-center items-center flex flex-col w-screen">
+<!-- navigation bar -->
+    <div class="w-screen h-16 bg-white px-10 py-5 justify-between items-center flex flex-row fixed top-0 left-0 z-60">
+        <img src="assets/icon.png" alt="Icon" class="w-10 h-10">
+        <div class="flex-row gap-10 hidden md:flex">
+            <a href="index.html"><p class="cursor-pointer hover:text-01">Home</p></a>
+            <a href="mailto:janie.zhaoy@gmail.com"><p class="cursor-pointer hover:text-01">Email</p></a>
+            <a href="https://www.linkedin.com/in/yue-zhao-janie"><p class="cursor-pointer hover:text-01">LinkedIn</p></a>
+            <a href="https://drive.google.com/file/d/10gtyET-c-_rKYtYBeBv03vOIkM7fk5mC/view?usp=sharing"><p class="cursor-pointer hover:text-01">Resume</p></a>
+        </div>
+    </div>
     
-    <a href="./index.html" class="w-12 h-12 fixed left-10 top-10 bg-slate-400 backdrop-blur-lg rounded-full z-60 flex justify-center items-center cursor-pointer hover:scale-110 transition-discrete ease-in-out duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="white" stroke-dasharray="12" stroke-dashoffset="12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12l7 7M12 12l-7 -7M12 12l-7 7M12 12l7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="12;0"/></path></svg>
-    </a>
 
     <img src="assets/pennplace/1-0.png" alt="Penn Place" class="mx-10">
 
-    <h1 class="text-5xl sm:text-8xl w-1/2 my-20">Penn's first-ever collaborative 3D creation platform</h1>
+    <h1 class="text-5xl sm:text-8xl w-2/3 my-20">Penn Place</h1>
 
-    <div class="flex flex-col sm:flex-row w-1/2 gap-10 mt-20 parent">
+    <div class="flex flex-col sm:flex-row w-2/3 gap-10 mt-20 parent">
 
         <div class="flex flex-col flex-1 gap-4">
             <h3 class="text-2xl font-bold">Time Duration</h2>
@@ -42,7 +48,7 @@
 
     </div>
 
-    <div class="w-1/2 mt-20">
+    <div class="w-2/3 mt-20">
         <p>I worked as a product designer in the team, where I was responsible for driving the ideation process by researching user needs, generating innovative concepts, and defining user-centered solutions. I created detailed prototypes to visualize and test our ideas, ensuring a seamless and intuitive user experience. Additionally, I contributed to the development of marketing materials, including posters and banners, to effectively communicate the value of our product to stakeholders and target audiences. My role also involved collaborating with cross-functional teams to align design goals with technical and business objectives.
         </p>
     </div>
@@ -50,10 +56,10 @@
     <img src="assets/pennplace/1-1.jpg" alt="Blender" class="w-2/3 mt-20 rounded-3xl">
     <!-- Problem -->
 
-    <p class="w-1/2 mt-20">As 3D models continue to grow in popularity, the process of creating them remains complex, requiring significant expertise and specialized skills. Additionally, many 3D construction software platforms, such as Blender and SketchUp, lack support for real-time collaborative editing. Our team aims to make 3D construction more accessible and enjoyable for users of all skill levels, enabling them to collaborate seamlessly and create in real time.
+    <p class="w-2/3 mt-20">As 3D models continue to grow in popularity, the process of creating them remains complex, requiring significant expertise and specialized skills. Additionally, many 3D construction software platforms, such as Blender and SketchUp, lack support for real-time collaborative editing. Our team aims to make 3D construction more accessible and enjoyable for users of all skill levels, enabling them to collaborate seamlessly and create in real time.
     </p>
 
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-20">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-20">
         <h2 class="text-3xl font-bold flex-1">Problem</h2>
         <div class="flex-1 flex flex-col gap-4">
             <p>1. How might we make 3D construction easy and accessible for users of all skill levels?</p>
@@ -61,7 +67,7 @@
         </div>
     </div>
 
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-20">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-20">
         <h2 class="text-3xl font-bold flex-1">User Research</h2>
         <div class="flex-1">
             <p>Our target users are students and young adults who are beginners in 3D creation or just curious about 3D construction process. We conducted interviews with the potential users and created the persona.</p>
@@ -70,8 +76,8 @@
 
     <img src="assets/pennplace/1-2.jpg" alt="Persona" class="w-2/3 mt-20 rounded-3xl">
 
-    <h2 class="text-3xl font-bold mt-30 w-1/2">Ideation</h2>
-    <div class="flex flex-col sm:flex-row w-1/2 gap-10 mt-10">
+    <h2 class="text-3xl font-bold mt-30 w-2/3">Ideation</h2>
+    <div class="flex flex-col sm:flex-row w-2/3 gap-10 mt-10">
         <p class="flex-1">Since this is a construction tool designed to give users ample space for creativity, we aim to adhere to the principle of <span class="font-bold">minimalism</span> by including only essential buttons and features in the design. 
         </p>
         <p class="flex-1">Additionally, we strive to ensure users can interact seamlessly with the interface using either a keyboard or a mouse, independently or in combination.
@@ -84,8 +90,8 @@
     
     <!-- Design -->
 
-    <h2 class="text-3xl font-bold mt-30 w-1/2">Prototype</h2>
-    <div class="flex flex-col sm:flex-row w-1/2 gap-10 mt-10">
+    <h2 class="text-3xl font-bold mt-30 w-2/3">Prototype</h2>
+    <div class="flex flex-col sm:flex-row w-2/3 gap-10 mt-10">
         <p class="flex-1">The welcome page only requires a username, as all users collaborate on the same project, eliminating the need for individual user accounts. 
         </p>
         <p class="flex-1">To reinforce our product identity, placing cubes to build 3D objects, and align with our brand, the design incorporates blue and pink cubes, reflecting the color palette of our organization’s logo.
@@ -93,7 +99,7 @@
     </div>
     <img src="assets/pennplace/1-7.png" alt="prototype-1" class="w-2/3 rounded-3xl mt-20">
 
-    <div class="w-1/2 flex flex-col gap-2 mt-20">
+    <div class="w-2/3 flex flex-col gap-2 mt-20">
         <p>The main page consists of five key elements:</p>
         <p>1. <span class="font-bold">Menu Buttons: </span>Options for default view, zoom in, and zoom out.</p>
         <p>2. <span class="font-bold">Toggle Button: </span> Allows users to switch between 'Build Mode' and 'Move Mode.'
@@ -108,7 +114,7 @@
 
     <img src="assets/pennplace/1-8.png" alt="prototype-2" class="w-2/3 rounded-3xl mt-20">
 
-    <div class="w-1/2 flex flex-col sm:flex-row mt-20 gap-10">
+    <div class="w-2/3 flex flex-col sm:flex-row mt-20 gap-10">
         <p class="flex-1">
             In <span class="font-bold">'Build Mode'</span> , users can select colors and place cubes to construct their models.
         </p>
@@ -120,7 +126,7 @@
     <img src="assets/pennplace/1-9.png" alt="prototype-3" class="w-2/3 rounded-3xl mt-20">
 
 
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-30">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-30">
         <h2 class="text-2xl font-bold flex-1">Interaction Design</h2>
         <div class="flex-1 flex flex-col gap-4">
             <p>Users can utilize the keyboard and mouse independently or in combination to complete the construction:
@@ -152,7 +158,7 @@
         </div>
     </div>
 
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-30">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-30">
         <h2 class="text-2xl font-bold flex-1">Accessibility</h2>
         <div class="flex-1 flex flex-col gap-4">
             <p>We created the mobile version as well to make our product accessible to more users. The mobile version is optimized for touch screen devices, allowing users to interact with the interface using gestures and taps.
@@ -168,13 +174,13 @@
 
     <!-- Test and Refine   -->
 
-    <h2 class="text-3xl font-bold mt-30 w-1/2">Test and Refine</h2>
-    <p class="mt-20 w-1/2">The toggle button was added because we don’t want the build and move feature intervening with each other. We designed different versions of toggle button to differentiate the two modes and finalized the last version.
+    <h2 class="text-3xl font-bold mt-30 w-2/3">Test and Refine</h2>
+    <p class="mt-20 w-2/3">The toggle button was added because we don’t want the build and move feature intervening with each other. We designed different versions of toggle button to differentiate the two modes and finalized the last version.
     </p>
 
     <img src="assets/pennplace/1-17.png" alt="toggle button" class="w-2/3 mt-20 rounded-3xl">
 
-    <p class="mt-30 w-1/2">I suggested simplifying the user flow when switching from 'Move Mode' to 'Build Mode' by allowing users to select a color and switch modes automatically, significantly reducing the time spent on mode transitions:
+    <p class="mt-30 w-2/3">I suggested simplifying the user flow when switching from 'Move Mode' to 'Build Mode' by allowing users to select a color and switch modes automatically, significantly reducing the time spent on mode transitions:
     </p>
 
     <div class="w-2/3 flex flex-col sm:flex-row gap-4 mt-20">
@@ -193,7 +199,7 @@
 
     <!-- marketing design -->
 
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-30">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-30">
         <h2 class="text-2xl font-bold flex-1">Marketing Design</h2>
         <div class="flex-1 flex flex-col gap-4">
             <p>I designed the marketing material design of different size for banners, flyers and other viewpoint.
@@ -203,37 +209,21 @@
 
     <img src="assets/pennplace/1-20.png" alt="Marketing Design" class="w-2/3 mt-20 rounded-3xl">
 
-    <h1 class="w-1/2 mt-20 text-3xl sm:text-6xl">After release, we gained over 370 users and attracted more than 32000 times of interactions, winning the 'Best Project' of the Penn Spark.</h1>
+    <h1 class="w-2/3 mt-20 text-3xl sm:text-6xl">After release, we gained over 370 users and attracted more than 32000 times of interactions, winning the 'Best Project' of the Penn Spark.</h1>
 
-    <a href="https://penn.place/"><button class="bg-white text-black font-bold px-10 py-5 rounded-full mt-20 border-2 border-black cursor-pointer hover:bg-black hover:text-white hover:border-white">Visit the Site</button></a>
+    <a href="https://penn.place/"><button class="bg-black text-white font-bold px-10 py-5 rounded-full mt-20 border-2 border-white cursor-pointer hover:bg-white hover:text-black hover:border-black">Visit the Site</button></a>
 
-    <h2 class="text-3xl font-bold w-1/2 mt-30">Key Takeaways</h2>
-    <div class="flex flex-col gap-4 w-1/2 mt-10">
+    <h2 class="text-3xl font-bold w-2/3 mt-30">Key Takeaways</h2>
+    <div class="flex flex-col gap-4 w-2/3 mt-10">
     <ul class="list-disc pl-5">
         <li>Less is more: A meaningful tool platform is intuitive, requiring minimal guidance for users to navigate effortlessly. The design should enable users to interact seamlessly with all tools while finding the experience enjoyable.</li>
         <li>Eliminating unnecessary steps is crucial: testing the user flow helps identify and remove redundancies, ultimately saving users valuable time.</li>
         <li>Successful UX design thrives on collaboration. Teamwork fosters diverse perspectives, ensuring more well-rounded solutions. By sharing ideas, testing concepts together, and incorporating feedback, teams create user-centered designs that truly meet users' needs.</li>
     </ul>
     </div>
-
-    <div class="text-[18px] grid grid-cols-2 md:grid-cols-4 px-5 w-full gap-5 pb-40 mt-30">
-
-        <a href="./worldsalon.html" class="relative bg-blue-800 rounded-4xl col-span-2 row-span-2 group cursor-pointer">
-            <img src="assets/2-0.png" alt="World Salon" class="w-full h-full object-cover items-center rounded-4xl group-hover:p-3 group-hover:h-[70%] transition-discrete ease-in-out duration-400">
-            <div class="text-white absolute bottom-5 sm:bottom-20 left-5 flex flex-col hidden group-hover:block transition-discrete ease-in-out duration-400">
-                <h1 class="text-4xl">World Salon</h1>
-                <p class="text-2xl sm:mt-5">Event-hosting and networking platform</p>
-            </div>
-        </a>
-
-        <a href="https://skillsharedashboard-tx72cbonzsd9mzwniw3hej.streamlit.app/" class="relative bg-sky-300 rounded-4xl col-span-2 row-span-2 group cursor-pointer">
-            <img src="assets/4-0.png" alt="Skillshare" class="w-full h-full object-cover items-center rounded-4xl group-hover:p-3 group-hover:h-[70%] transition-discrete ease-in-out duration-400">
-            <div class="text-black absolute bottom-5 sm:bottom-20 left-5 flex flex-col hidden group-hover:block transition-discrete ease-in-out duration-400">
-                <h1 class="text-4xl">Skillshare Dasboard</h1>
-                <p class="text-2xl sm:mt-5">Evaluation information for the top 100 courses on SkillShare</p>
-            </div>
-        </a>
-
+        
+<!-- footer -->
+<p class="text-center m-30">Designed and Coded by Yue, 2025</p>
 
 </body>
 </html>

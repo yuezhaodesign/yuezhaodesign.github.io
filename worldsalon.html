@@ -10,18 +10,25 @@
   </head>
 
 
-<body class="bg-black text-white text-[20px] justify-center items-center flex flex-col w-screen">
+<body class="bg-white text-black text-[20px] justify-center items-center flex flex-col w-screen">
 
+<!-- navigation bar -->
+    <div class="w-screen h-16 bg-white px-10 py-5 justify-between items-center flex flex-row fixed top-0 left-0 z-60">
+        <img src="assets/icon.png" alt="Icon" class="w-10 h-10">
+        <div class="flex-row gap-10 hidden md:flex">
+            <a href="index.html"><p class="cursor-pointer hover:text-01">Home</p></a>
+            <a href="mailto:janie.zhaoy@gmail.com"><p class="cursor-pointer hover:text-01">Email</p></a>
+            <a href="https://www.linkedin.com/in/yue-zhao-janie"><p class="cursor-pointer hover:text-01">LinkedIn</p></a>
+            <a href="https://drive.google.com/file/d/10gtyET-c-_rKYtYBeBv03vOIkM7fk5mC/view?usp=sharing"><p class="cursor-pointer hover:text-01">Resume</p></a>
+        </div>
+    </div>
     
-    <a href="./index.html" class="w-12 h-12 fixed left-10 top-10 bg-slate-400 backdrop-blur-lg rounded-full z-60 flex justify-center items-center cursor-pointer hover:scale-110 transition-discrete ease-in-out duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="white" stroke-dasharray="12" stroke-dashoffset="12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12l7 7M12 12l-7 -7M12 12l-7 7M12 12l7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="12;0"/></path></svg>
-    </a>
 
-    <img src="assets/2-0.png" alt="World Salon" class="mx-10">
+    <img src="assets/worldsalon.png" alt="World Salon" class="mx-10">
 
-    <h1 class="text-5xl sm:text-8xl w-1/2 my-20">Event-hosting and networking platform</h1>
+    <h1 class="text-5xl sm:text-8xl w-2/3 my-20">World Salon</h1>
 
-    <div class="flex flex-col sm:flex-row w-1/2 gap-10 mt-20 parent">
+    <div class="flex flex-col sm:flex-row w-2/3 gap-10 mt-20 parent">
 
         <div class="flex flex-col flex-1 gap-4">
             <h3 class="text-2xl font-bold">Time Duration</h2>
@@ -40,7 +47,7 @@
 
     </div>
 
-    <div class="w-1/2 mt-20">
+    <div class="w-2/3 mt-20">
         <p>World Salon is an international event-hosting and networking platform. Our UX design team designed the website and mobile app from 0 to 1.
         </p>
     </div>
@@ -50,14 +57,14 @@
 
     <!-- User Research -->
 
-    <div class="flex flex-col sm:flex-row w-1/2 gap-10 mt-30">
+    <div class="flex flex-col sm:flex-row w-2/3 gap-10 mt-30">
         <h2 class="text-3xl font-bold flex-1">User Research</h2>
         <p class="flex-1">We delievered user interviews among seven users and analyzed their needs and pain points.</p>
     </div>
 
     <img src="assets/worldsalon/interview.jpg" alt="Interview" class="w-2/3 mt-20 rounded-3xl">
     
-    <div class="flex flex-col sm:flex-row w-1/2 gap-10 mt-20">
+    <div class="flex flex-col sm:flex-row w-2/3 gap-10 mt-20">
         <p class="flex-1 font-medium text-2xl">For Audiences</p>
         <div class="flex-1 flex flex-col gap-4">
         <p><span class="font-bold">1. Ineffective Event Discovery: </span> Difficulty in finding events that match their interests or schedules.
@@ -69,7 +76,7 @@
 
     <img src="assets/worldsalon/audience.jpeg" alt="Personas" class="w-2/3 mt-20 rounded-3xl">
 
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-20">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-20">
         <h2 class="text-2xl font-medium flex-1">For Speakers</h2>
         <div class="flex-1 flex flex-col gap-4">
             <p><span class="font-bold">1. Cumbersome Invitation Management: </span>managing and organizing speaking invitations is time-intensive and inefficient.</p>
@@ -81,14 +88,14 @@
 
 
     <!-- Competitor Analysis -->
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-20">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 sm:gap-0 mt-20">
         <h2 class="text-3xl font-bold flex-1">Competitor Analysis</h2>
         <div class="flex-1">
             <p>We conducted detailed competitor analysis with other networking and event-hosting app and concluded our opportunities.</p>
         </div>
     </div>
 
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 mt-20">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 mt-20">
         <div class="flex-1 flex flex-col gap-4">
             <h2 class="font-medium text-2xl">Events Management</h2>
             <p>1. Create a chat group of all the participants automatically after they join the events, so they can network as early as possible.</p>
@@ -105,10 +112,10 @@
     <img src="assets/worldsalon/competitor.jpg" alt="Personas" class="w-2/3 mt-20 rounded-3xl">
 
     <!-- The challenge -->
-    <h2 class="text-3xl font-bold mt-30 w-1/2">The Challenge</h2>
-    <p class="text-5xl mt-10 w-1/2">How might we design a more effective event-hosting and networking platform for both speakers and audiences?</p>
+    <h2 class="text-3xl font-bold mt-30 w-2/3">The Challenge</h2>
+    <p class="text-5xl mt-10 w-2/3">How might we design a more effective event-hosting and networking platform for both speakers and audiences?</p>
 
-    <div class="w-1/2 flex flex-col sm:flex-row gap-10 mt-20">
+    <div class="w-2/3 flex flex-col sm:flex-row gap-10 mt-20">
         <div class="flex-1 flex flex-col gap-4">
             <h2 class="font-medium text-2xl">Specific Goals</h2>
             <ul class="list-disc pl-5">
@@ -128,7 +135,7 @@
     </div>
 
     <!-- Prototype -->
-    <h2 class="text-3xl font-bold mt-30 w-1/2">Feature 1 - Event Discovery</h2>
+    <h2 class="text-3xl font-bold mt-30 w-2/3">Feature 1 - Event Discovery</h2>
 
     <video class="w-2/3 rounded-3xl mt-10" controls>
         <source src="assets/worldsalon/feature1.mp4" type="video/mp4">
@@ -143,24 +150,24 @@
 
     <!-- feature 2 -->
 
-    <h2 class="text-3xl font-bold mt-20 w-1/2">Feature 2 - Invitation Management</h2>
-    <p class="mt-10 w-1/2"><span class="font-bold">For the website interface: </span>the section layout is designed to prioritize features based on their frequency of use, ensuring a more intuitive user experience.</p>
+    <h2 class="text-3xl font-bold mt-20 w-2/3">Feature 2 - Invitation Management</h2>
+    <p class="mt-10 w-2/3"><span class="font-bold">For the website interface: </span>the section layout is designed to prioritize features based on their frequency of use, ensuring a more intuitive user experience.</p>
     <img src="assets/worldsalon/feature2.png" alt="Feature 2" class="w-2/3 mt-10 rounded-3xl">
 
-    <p class="mt-10 w-1/2"><span class="font-bold">For the mobile interface: </span>The step by step user experience enables speakers to seamlessly accept invitations, review event details and edit Q&A questions with ease.</p>
+    <p class="mt-10 w-2/3"><span class="font-bold">For the mobile interface: </span>The step by step user experience enables speakers to seamlessly accept invitations, review event details and edit Q&A questions with ease.</p>
     <video class="h-200 rounded-3xl mt-10" controls>
         <source src="assets/worldsalon/feature2.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
-    <h3 class="text-2xl font-medium mt-20 w-1/2">Problem</h3>
-    <p class="mt-10 w-1/2">Speaker engagement is low because speakers are often very busy, and the number of available speakers is limited. To attract more audience and improve engagement, we want speakers to participate more actively in our events.</p>
+    <h3 class="text-2xl font-medium mt-20 w-2/3">Problem</h3>
+    <p class="mt-10 w-2/3">Speaker engagement is low because speakers are often very busy, and the number of available speakers is limited. To attract more audience and improve engagement, we want speakers to participate more actively in our events.</p>
 
-    <h3 class="text-2xl font-medium mt-20 w-1/2">Insight</h3>
-    <p class="mt-10 w-1/2">When asked, speakers expressed that they are driven by knowing what the audience thinks about their field, as this can inspire them.</p>
+    <h3 class="text-2xl font-medium mt-20 w-2/3">Insight</h3>
+    <p class="mt-10 w-2/3">When asked, speakers expressed that they are driven by knowing what the audience thinks about their field, as this can inspire them.</p>
 
-    <h3 class="text-2xl font-medium mt-20 w-1/2">Solution</h3>
-    <p class="mt-10 w-1/2">To motivate speakers to accept more event invitations, we implemented a new approach. By creating a sense of exclusivity and curiosity, this change encourages speakers to commit while also addressing their desire for audience insights.</p>
+    <h3 class="text-2xl font-medium mt-20 w-2/3">Solution</h3>
+    <p class="mt-10 w-2/3">To motivate speakers to accept more event invitations, we implemented a new approach. By creating a sense of exclusivity and curiosity, this change encourages speakers to commit while also addressing their desire for audience insights.</p>
 
     <div class="w-2/3 flex flex-col sm:flex-row gap-4 mt-10">
         <div class="flex flex-col gap-4 w-full sm:w-1/2 items-center">
@@ -179,14 +186,14 @@
 
     <!-- feature 3 -->
 
-    <h2 class="text-3xl font-bold mt-30 w-1/2">Feature 3 - Connect and Chat</h2>
+    <h2 class="text-3xl font-bold mt-30 w-2/3">Feature 3 - Connect and Chat</h2>
     <video class="h-200 rounded-3xl mt-20" controls>
         <source src="assets/worldsalon/feature3.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
-    <h2 class="text-3xl font-bold w-1/2 mt-30">Key Takeaways</h2>
-    <div class="flex flex-col gap-4 w-1/2 mt-10">
+    <h2 class="text-3xl font-bold w-2/3 mt-30">Key Takeaways</h2>
+    <div class="flex flex-col gap-4 w-2/3 mt-10">
     <ul class="list-disc pl-5">
         <li>Understand users' pain points and identifying opportunities among competitors form the foundation of product innovation and core of effective design.</li>
         <li>Designers can enhance user engagement by leveraging psychological principles, aligning the products appeal with its business goal.</li>
@@ -194,25 +201,9 @@
     </ul>
     </div>
 
-    <div class="text-[18px] grid grid-cols-2 md:grid-cols-4 px-5 w-full gap-5 pb-40 mt-30">
 
-        <a href="./pennplace.html"  class="relative bg-pink-200 rounded-4xl col-span-2 row-span-2 group cursor-pointer">
-            <img src="assets/pennplace.png" alt="Penn Place" class="w-full h-full object-cover items-center rounded-4xl group-hover:p-3 group-hover:h-[70%] transition-discrete ease-in-out duration-400">
-            <div class="text-black absolute bottom-5 sm:bottom-20 left-5 flex flex-col hidden group-hover:block transition-discrete ease-in-out duration-400">
-                <h1 class="text-4xl">Penn Place</h1>
-                <p class="text-2xl sm:mt-5">Penn's first-ever collaborative 3D creation platform</p>
-            </div>
-        </a>
-
-        <a href="https://skillsharedashboard-tx72cbonzsd9mzwniw3hej.streamlit.app/" class="relative bg-sky-300 rounded-4xl col-span-2 row-span-2 group cursor-pointer">
-            <img src="assets/4-0.png" alt="Skillshare" class="w-full h-full object-cover items-center rounded-4xl group-hover:p-3 group-hover:h-[70%] transition-discrete ease-in-out duration-400">
-            <div class="text-black absolute bottom-5 sm:bottom-20 left-5 flex flex-col hidden group-hover:block transition-discrete ease-in-out duration-400">
-                <h1 class="text-4xl">Skillshare Dasboard</h1>
-                <p class="text-2xl sm:mt-5">Evaluation information for the top 100 courses on SkillShare</p>
-            </div>
-        </a>
-    </div>
-
+<!-- footer -->
+<p class="text-center m-30">Designed and Coded by Yue, 2025</p>
 
 </body>
 </html>
