@@ -9,7 +9,7 @@
       </head>
 
 
-      <body class="bg-white font-poppins w-screen items-center">
+      <body class="bg-white font-poppins w-screen items-center lg:text-[20px]">
 <!-- navigation bar -->
         <div class="w-screen h-16 bg-white px-10 py-5 justify-between items-center flex flex-row fixed top-0 left-0 z-60">
             <img src="assets/icon.png" alt="Icon" class="w-10 h-10">
@@ -17,36 +17,37 @@
                 <a href="index.html"><p class="cursor-pointer hover:text-01">Home</p></a>
                 <a href="mailto:janie.zhaoy@gmail.com"><p class="cursor-pointer hover:text-01">Email</p></a>
                 <a href="https://www.linkedin.com/in/yue-zhao-janie"><p class="cursor-pointer hover:text-01">LinkedIn</p></a>
-                <a href="https://drive.google.com/file/d/10gtyET-c-_rKYtYBeBv03vOIkM7fk5mC/view?usp=sharing"><p class="cursor-pointer hover:text-01">Resume</p></a>
+                <a href="https://drive.google.com/file/d/1S3kvmd38fqkww0iQvwdhrszbMTz3HRCy/view?usp=sharing"><p class="cursor-pointer hover:text-01">Resume</p></a>
             </div>
         </div>
         
 <!-- introduction -->
-        <div class="w-screen p-10 mt-16 flex flex-col sm:flex-row justify-center items-center gap-5">
-            <div class="card w-3/5 p-10 bg-03 rounded-2xl h-full lg:self-stretch">
+        <div class="w-screen p-10 mt-16 flex flex-col sm:flex-row gap-5">
+            <div class="card sm:w-3/5 p-10 bg-03 rounded-2xl h-full lg:self-stretch">
                 <h1 class="text-4xl font-bold">Hi, I'm Yue!</h1>
                 <p class="mt-10"> I'm a product designer pursuing my master's degree at the University of Pennsylvania. I excel at uncovering user insights and designing meaningful, intuitive products that truly resonate with users. My passion for crafting impactful experiences is complemented by front-end development skills. Actively seeking new opportunities to enhance user interactions and create innovative solutions, I am eager to collaborate and build something great together!</p>
                 <div class="flex flex-row mt-25 items-center">
                     <a href="mailto:janie.zhaoy@gmail.com"><button class="bg-black text-white px-5 py-4 rounded-full font-semibold  hover:bg-04 hover:text-01 cursor-pointer">Get in Touch</button></a>
-                    <a href="https://drive.google.com/file/d/10gtyET-c-_rKYtYBeBv03vOIkM7fk5mC/view?usp=sharing"><img src="assets/resume.png" alt="resume" class="w-10 h-10 ml-10 hover:scale-110 transition-discrete"></a>
+                    <a href="https://drive.google.com/file/d/1S3kvmd38fqkww0iQvwdhrszbMTz3HRCy/view?usp=sharing"><img src="assets/resume.png" alt="resume" class="w-10 h-10 ml-10 hover:scale-110 transition-discrete"></a>
                     <a href="https://www.linkedin.com/in/yue-zhao-janie"><img src="assets/linkedin.png" alt="linkedin" class="w-10 h-10 ml-5 hover:scale-110 transition-discrete"></a>
                     <a href="https://www.instagram.com/yuezhao_janie/"><img src="assets/instagram.png" alt="instagram" class="w-10 h-10 ml-5 hover:scale-110 transition-discrete"></a>
                 </div>
             </div>
-            <img src="assets/profile.png" alt="profile" class="w-2/5 h-auto object-cover rounded-2xl self-stretch">
+            <img src="assets/profile.png" alt="profile" class="sm:w-2/5 h-auto object-cover rounded-2xl self-stretch" style="height: auto; aspect-ratio: 1;">
         </div>
 
 <!-- projects -->
-        <div class="w-full px-10 grid grid-cols-2 grid-rows-2 gap-5 lg:grid-cols-4 lg:grid-rows-4">
-          <a href="./pennplace.html"  class="relative bg-01 rounded-2xl group cursor-pointer">
-            <img src="assets/pennplace.png" alt="Penn Place" class="w-full h-full object-cover items-center rounded-2xl group-hover:p-3 group-hover:h-[75%] transition-discrete ease-in-out duration-400">
+        <div class="w-full px-10 grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-5">
+<!-- pennplace -->
+          <a href="./pennplace.html"  class="relative bg-01 rounded-2xl group cursor-pointer" style="height: auto; aspect-ratio: 1;">
+            <img src="assets/pennplace.png" alt="Penn Place" class="w-full h-full object-cover items-center rounded-2xl group-hover:p-3 group-hover:h-[70%] transition-discrete ease-in-out duration-400">
             <div class="text-white absolute bottom-[10%] left-5  flex-col hidden group-hover:flex transition-discrete ease-in-out duration-400">
                 <h1 class="text-3xl">Penn Place</h1>
                 <p class="text-xl sm:mt-5">Penn's first-ever collaborative 3D creation platform</p>
             </div>
         </a>
-        <a href="./worldsalon.html"  class="relative bg-03 rounded-2xl group cursor-pointer">
-            <img src="assets/worldsalon.png" alt="World Salon" class="w-full h-full object-cover items-center rounded-2xl group-hover:p-3 group-hover:h-[75%] transition-discrete ease-in-out duration-400">
+        <a href="./worldsalon.html"  class="relative bg-03 rounded-2xl group cursor-pointer" style="height: auto; aspect-ratio: 1;">
+            <img src="assets/worldsalon.png" alt="World Salon" class="w-full h-full object-cover items-center rounded-2xl group-hover:p-3 group-hover:h-[70%] transition-discrete ease-in-out duration-400">
             <div class="text-black absolute bottom-[10%] left-5  flex-col hidden group-hover:flex transition-discrete ease-in-out duration-400">
                 <h1 class="text-3xl">World Salon</h1>
                 <p class="text-xl sm:mt-5">Event-hosting and networking platform</p>
@@ -54,8 +55,8 @@
         </a>
 
       <a href="https://skillsharedashboard-tx72cbonzsd9mzwniw3hej.streamlit.app/"   
-        class="relative bg-02 rounded-2xl group cursor-pointer">
-          <img src="assets/skillshare.png" alt="Skillshare Dashboard" class="w-full h-full object-cover items-center rounded-2xl group-hover:p-3 group-hover:h-[75%] transition-discrete ease-in-out duration-400">
+        class="relative bg-02 rounded-2xl group cursor-pointer" style="height: auto; aspect-ratio: 1;">
+          <img src="assets/skillshare.png" alt="Skillshare Dashboard" class="w-full h-full object-cover items-center rounded-2xl group-hover:p-3 group-hover:h-[70%] transition-discrete ease-in-out duration-400">
           <div class="text-white absolute bottom-[10%] left-5  flex-col hidden group-hover:flex transition-discrete ease-in-out duration-400">
               <h1 class="text-3xl">Skillshare Dasboard</h1>
               <p class="text-xl sm:mt-5">Evaluation information for the top 100 courses</p>
@@ -63,8 +64,8 @@
       </a>
 
       <a href="#"
-        class="relative bg-04 rounded-2xl group cursor-pointer">
-          <img src="assets/museogo.png" alt="MuseoGo" class="w-full h-full object-cover items-center rounded-2xl group-hover:p-3 group-hover:h-[75%] transition-discrete ease-in-out duration-400">
+        class="relative bg-04 rounded-2xl group cursor-pointer" style="height: auto; aspect-ratio: 1;">
+          <img src="assets/museogo.png" alt="MuseoGo" class="w-full h-full object-cover items-center rounded-2xl group-hover:p-3 group-hover:h-[70%] transition-discrete ease-in-out duration-400">
           <div class="text-black absolute bottom-[10%] left-5  flex-col hidden group-hover:flex transition-discrete ease-in-out duration-400">
               <h1 class="text-3xl">MuseoGo</h1>
               <p class="text-xl sm:mt-5">Coming Soon ...</p>
