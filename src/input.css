@@ -7,4 +7,12 @@
     --color-02: #B2A5FF;
     --color-03: #DAD2FF;
     --color-04: #FFF2AF;
+
+
+    --text-title: 30px;
+    --text-title--font-weight: 700;
+    --text-head:  20px;
+    --text-head--font-weight: 600;
+    --text-body: 18px;
+    --text-body--font-weight: 400;
   }
