@@ -740,11 +740,11 @@
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
   }
+  .mt-\[10vh\] {
+    margin-top: 10vh;
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
-  }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
@@ -845,14 +845,8 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-15 {
-    height: calc(var(--spacing) * 15);
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
   }
   .h-200 {
     height: calc(var(--spacing) * 200);
@@ -860,17 +854,14 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
   .h-\[10vh\] {
     height: 10vh;
   }
-  .h-\[50vh\] {
-    height: 50vh;
-  }
   .h-\[90vh\] {
     height: 90vh;
-  }
-  .h-\[100vh\] {
-    height: 100vh;
   }
   .h-screen {
     height: 100vh;
@@ -896,32 +887,23 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
   .w-25 {
     width: calc(var(--spacing) * 25);
   }
   .w-\[40\%\] {
     width: 40%;
   }
-  .w-\[45\%\] {
-    width: 45%;
-  }
-  .w-\[50\%\] {
-    width: 50%;
-  }
   .w-\[60\%\] {
     width: 60%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .w-full {
     width: 100%;
   }
   .w-screen {
     width: 100vw;
-  }
-  .max-w-\[1280px\] {
-    max-width: 1280px;
   }
   .max-w-none {
     max-width: none;
@@ -1178,6 +1160,9 @@
   .auto-rows-min {
     grid-auto-rows: min-content;
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1342,9 +1327,6 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -1582,9 +1564,6 @@
   .bg-01 {
     background-color: var(--color-01);
   }
-  .bg-02 {
-    background-color: var(--color-02);
-  }
   .bg-03 {
     background-color: var(--color-03);
   }
@@ -1781,9 +1760,6 @@
   .object-top {
     object-position: top;
   }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -1798,18 +1774,6 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
-  }
-  .py-12 {
-    padding-block: calc(var(--spacing) * 12);
-  }
-  .py-15 {
-    padding-block: calc(var(--spacing) * 15);
-  }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
-  }
-  .py-30 {
-    padding-block: calc(var(--spacing) * 30);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
@@ -2275,10 +2239,6 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
-  .duration-500 {
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
-  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
@@ -2440,14 +2400,6 @@
   .transform-view {
     transform-box: view-box;
   }
-  .hover\:size-1\.5 {
-    &:hover {
-      @media (hover: hover) {
-        width: calc(var(--spacing) * 1.5);
-        height: calc(var(--spacing) * 1.5);
-      }
-    }
-  }
   .hover\:scale-105 {
     &:hover {
       @media (hover: hover) {
@@ -2455,23 +2407,6 @@
         --tw-scale-y: 105%;
         --tw-scale-z: 105%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
-  .hover\:scale-110 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 110%;
-        --tw-scale-y: 110%;
-        --tw-scale-z: 110%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
-  .hover\:cursor-zoom-in {
-    &:hover {
-      @media (hover: hover) {
-        cursor: zoom-in;
       }
     }
   }
@@ -2489,15 +2424,6 @@
       }
     }
   }
-  .hover\:via-red-300 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-gradient-via: var(--color-red-300);
-        --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-        --tw-gradient-stops: var(--tw-gradient-via-stops);
-      }
-    }
-  }
   .hover\:text-01 {
     &:hover {
       @media (hover: hover) {
@@ -2512,14 +2438,6 @@
       }
     }
   }
-  .hover\:shadow-2xl {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
   .sm\:w-1\/2 {
     @media (width >= 40rem) {
       width: calc(1/2 * 100%);
@@ -2530,14 +2448,44 @@
       width: calc(1/3 * 100%);
     }
   }
+  .sm\:w-\[40\%\] {
+    @media (width >= 40rem) {
+      width: 40%;
+    }
+  }
+  .sm\:w-\[60\%\] {
+    @media (width >= 40rem) {
+      width: 60%;
+    }
+  }
+  .sm\:w-full {
+    @media (width >= 40rem) {
+      width: 100%;
+    }
+  }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
     }
   }
+  .sm\:items-start {
+    @media (width >= 40rem) {
+      align-items: flex-start;
+    }
+  }
   .sm\:gap-0 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:px-0 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 0);
     }
   }
   .sm\:text-6xl {
@@ -2864,46 +2812,4 @@
 @property --tw-contain-style {
   syntax: "*";
   inherits: false;
-}
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 100%;
 }
