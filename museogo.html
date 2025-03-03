@@ -9,17 +9,273 @@
       </head>
 
 
-    <body class="bg-white font-poppins items-center container w-max-[1280px]">
+    <body class="bg-white font-poppins">
 
 <!-- navigation bar -->
         <div class="w-full px-20 h-[10vh] bg-white py-5 justify-between items-center flex flex-row fixed top-0 left-0 z-60">
             <a href="index.html"><img src="assets/homepage/logo.png" alt="icon" class="w-10 h-10 cursor-pointer"></a>
             <div class="flex-row gap-15 hidden md:flex">
-                <a href="index.html"><p class="cursor-pointer text-head text-01">Home</p></a>
+                <a href="index.html"><p class="cursor-pointer text-head text-02 hover:text-01">Home</p></a>
                 <a href="https://www.linkedin.com/in/yue-zhao-janie"><p class="cursor-pointer text-02 text-head hover:text-01">LinkedIn</p></a>
                 <a href="https://codepen.io/yuezhaojanie/pens/showcase"><p class="cursor-pointer text-02 text-head hover:text-01">CodePen</p></a>
                 <a href="https://drive.google.com/file/d/1q0cPbAi2airKdiWNVX1CpJ0R-9sKVwN_/view?usp=sharing"><p class="cursor-pointer text-02 text-head hover:text-01">Resume</p></a>
             </div>
         </div>
         
-    </body>
+<!-- intro -->
+    <img src="assets/museogo/museogo.png" alt="museogo" class="w-full mt-[10vh] mb-10 sm:mb-30">
+    <div class="justify-center flex flex-col px-5 sm:px-40 mb-30">
+        <p class="text-5xl sm:text-8xl mb-20 sm:mb-30 font-bold">MuseoGo</p>
+        <div class="flex flex-col sm:flex-row justify-between gap-y-20">
+            <div class="flex flex-col">
+                <p class="text-head font-bold mb-10">Role</p>
+                <p class="text-body">Product Designer</p>
+                <p class="text-body">Front-end Developer</p>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-head font-bold mb-10">Responsibility</p>
+                <p class="text-body">User research</p>
+                <p class="text-body">Ideation</p>
+                <p class="text-body">Wireframe</p>
+                <p class="text-body">Prototype</p>
+                <p class="text-body">Front-end development</p>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-head font-bold mb-10">Time Duration</p>
+                <p class="text-body">Jan 2025 - Feb 2025</p>
+            </div>
+        </div>
+    </div>
+
+<!-- problem -->
+    <div class="px-5 sm:px-40 justify-center">
+        <p class="text-title mb-10">Problem</p>
+        <p class="text-body mb-10">As both a product designer and an educator, my previous teaching experience in museums inspired many of the ideas behind this product. I noticed that parents and children often walked through exhibitions, absorbing very little knowledge before losing interest. Kids didn't seem to enjoy museums and only visited when prompted by teachers or parents, creating a negative feedback loop. This phenomenon puzzled me, so my friend Ruby and I decided to explore it further and find potential solutions.</p>
+        <img src="assets/museogo/problem.png" alt="statistics" class="sm:px-20 mb-10">
+        <p class="text-body mb-10">As we delved deeper into our research, we discovered that the issues were not only widespread but also more serious than we initially thought. Statistics reveal that museums in the U.S. invest $2 billion annually in educational activities. Yet, the average museum engagement rate for 2023/24 stands at just 46%. Despite the wealth of exceptional educational resources available in museums, these resources are often wasted or overlooked every day.This is the problem we set out to solve: </p>
+        <p class="text-head text-01 sm:px-20 mb-30">”How might we transform museum visits into engaging, meaningful, and enjoyable learning experiences for children to reduce the waste of educational resource?”</p>
+    </div>
+
+<!-- research -->
+    <div class="px-5 sm:px-40 justify-center">
+        <p class="text-title mb-10">Research</p>
+        <p class="text-body mb-10">To begin, we conducted interviews with museum visitors to identify their pain points when it comes to learning in these spaces. Our primary focus was on three key groups: children (ages 8–12), teenagers (ages 13–17), and parents. Based on their feedback, I developed personas to better understand their unique needs, behaviors, and challenges. </p>
+        <img src="assets/museogo/kid.png" alt="kid" class="sm:px-20 mb-10">
+        <img src="assets/museogo/teen.png" alt="teen" class="sm:px-20 mb-10">
+        <img src="assets/museogo/parents.png" alt="parents" class="sm:px-20 mb-10">
+        <p class="text-body mb-10">In summary, we categorized their needs into three distinct phases of the museum visit: before, during, and after. This framework allowed us to address their pain points and opportunities for engagement at each stage.</p>
+        <ul class="text-head text-01 px-5 sm:px-20 mb-10 list-disc">
+            <li>Before visit: Limited itinerary planning.</li>
+            <li>During visit: Lack of live Q&A or age-appropriate responses.</li>
+            <li>After visit: Minimal review of the experience.</li>
+        </ul>
+        <p class="text-body mb-10">We also explored existing products in the museum education space, carefully analyzing their features, strengths, and shortcomings. This research helped us pinpoint gaps and uncover our opportunities.</p>
+        <img src="assets/museogo/competitor.png" alt="competitor analysis" class="px-20 mb-10">
+        <p class="text-body mb-10">Our opportunities:</p>
+        <ul class="text-head text-01 px-5 sm:px-20 mb-30 list-disc">
+            <li>AI-Powered Personalization</li>
+            <li>Real-Time Interaction</li>
+            <li>Gamified Learning</li>
+            <li>Post-Visit Learning Continuation</li>
+        </ul>
+    </div>
+
+<!-- solutions -->
+    <div class="px-5 sm:px-40 justify-center">
+        <p class="text-title mb-10">Solutions</p>
+        <p class="text-head mb-10">Before Visit</p>
+        <p class="text-body mb-10">Thanks to advancements in AI technology, we can now create personalized itineraries tailored to each family’s unique needs. To enable this, we ask users to input basic visit information, such as their children’s ages, topics of interest, estimated arrival time, and planned duration of their stay. Using this data, the AI generates a customized visit plan, along with a curated podcast and recommended books to help families preview the experience. </p>
+        <p class="text-body mb-10">This step occurs when parents are booking tickets at home, so we designed it primarily for the website view, with text tailored to engage and guide parents. However, once families are at the museum, parents typically rely on their mobile phones. To help them seamlessly use the generated plan during their visit—and to encourage adoption of our product—we’ve provided multiple access options to suit different user preferences. Whether they prefer email, direct links, or app integration, we’ve made it easy for parents to access and follow their personalized itinerary on the go.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-20">
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/1-1.png" alt="1-1">
+                <p class="text-body">Enter visit info</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/1-2.png" alt="1-2">
+                <p class="text-body">Visit plan in time line</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/1-3.png" alt="1-3">
+                <p class="text-body">Multiple ways to view plan on mobile phones</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/1-4.png" alt="1-4">
+                <p class="text-body">Podcast and book recommendation</p>
+            </div>
+        </div>
+
+        <p class="text-head mb-10">During Visit</p>
+        <p class="text-body">For the visit itself, our goal is to encourage kids to interact more deeply with the exhibitions. Drawing inspiration from the self-determination theory, we designed experiences to fulfill three core psychological needs for learners: autonomy, relatedness, and competence.</p>
+        <ul class="text-body mb-10 list-disc list-inside">
+            <li>To foster autonomy, we introduced an AI companion that allows children to ask any questions they have, empowering them to explore at their own pace and follow their curiosity.</li>
+            <li>To enhance relatedness, we incorporated collaborative activities that encourage real-world connections, whether with family members or other visitors.</li>
+            <li>To build competence, we integrated quizzes that help kids review and reinforce their newfound knowledge, giving them a sense of accomplishment and mastery.</li>
+        </ul>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/2-1.png" alt="2-1">
+                <p class="text-body">AI companion</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/2-2.png" alt="2-2">
+                <p class="text-body">Collaborative activities</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/2-3.png" alt="2-3">
+                <p class="text-body">Quizzes</p>
+            </div>
+        </div>
+        <p class="text-body mb-10">I designed a cute, friendly AI character - Museo - to make it engaging and relatable for kids, encouraging interaction. With voice input, children can easily ask questions, creating a seamless and enjoyable museum experience.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 justify-center mb-10">
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/2-4.png" alt="2-4">
+                <p class="text-body">Museo</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/2-5.png" alt="2-5" class="h-[650px]">
+                <p class="text-body">Voice input</p>
+            </div>
+        </div>
+        <p class="text-body mb-10">For the quiz, we wanted to ensure kids never feel like they’ve 'failed' the museum, avoiding any negative experiences. If a child selects a wrong answer, a pop-up window appears with guidance or clues, encouraging them to find the correct answer in the exhibition. Once they complete the quiz, they earn bonus points—a rewarding system designed to boost engagement and make learning fun.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 justify-center gap-5 mb-20">
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/2-6.png" alt="2-6">
+                <p class="text-body">Quiz</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/2-7.png" alt="2-7">
+                <p class="text-body">Scaffold</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/2-8.png" alt="2-8">
+                <p class="text-body">Bonus points</p>
+            </div>
+        </div>
+
+        <p class="text-head mb-10">After Visit</p>
+        <p class="text-body mb-10">After completing each exhibition, visitors earn a unique badge as part of the reward system. At the end of their trip, these badges are displayed as a collection on the exit ticket. The exit ticket serves as a summary, helping visitors review what they’ve learned and reinforcing their knowledge in a fun and memorable way.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 justify-center gap-5 mb-10">
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/3-1.png" alt="3-1" class="h-[650px]">
+                <p class="text-body">Badge</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/3-2.png" alt="3-2" class="h-[650px]">
+                <p class="text-body">Exit ticket</p>
+            </div>
+        </div>
+        <p class="text-body mb-10">Drawing from the multimedia learning theory, we use AI to generate a unique song for each group, summarizing what they’ve learned for long-term retention. Designed as a gift from Museo, this feature adds a conversational and memorable touch to the learning experience.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 justify-center gap-5 mb-20">
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/3-3.png" alt="3-3" class="h-[650px]">
+                <p class="text-body">Choose topics</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/3-4.png" alt="3-4" class="h-[650px]">
+                <p class="text-body">Generated song</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/3-5.png" alt="3-5" class="h-[650px]">
+                <p class="text-body">Song</p>
+            </div>
+        </div>
+        <p class="text-body mb-10">Beyond the visit, we recommend additional learning resources—like videos, books, and related exhibitions—based on what they explored that day. This helps families make the most of the museum’s offerings and extends the learning experience beyond their visit</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 justify-center gap-5 mb-30">
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/3-6.png" alt="3-6" class="h-[650px]">
+                <p class="text-body">Videos</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/3-7.png" alt="3-7" class="h-[650px]">
+                <p class="text-body">Books</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/3-8.png" alt="3-8" class="h-[650px]">
+                <p class="text-body">Exhibitions</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Prototype -->
+    <div class="px-5 sm:px-40 justify-center">
+        <p class="text-title mb-10">Prototype</p>
+        <p class="text-head mb-10">Before Visit</p>
+        <div class="flex items-center justify-center mb-20">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1100" height="600" src="https://embed.figma.com/proto/pCDpLswS4U4hk3eXz2QDs8/MuseoGo---Prototype?page-id=4%3A9&node-id=126-547&p=f&viewport=82%2C32%2C0.19&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=126%3A547&embed-host=share" allowfullscreen></iframe>
+        </div>
+        <p class="text-head mb-10">During Visit</p>
+        <div class="flex items-center justify-center mb-20">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300" height="700" src="https://embed.figma.com/proto/pCDpLswS4U4hk3eXz2QDs8/MuseoGo---Prototype?page-id=4%3A9&node-id=315-292&p=f&viewport=82%2C32%2C0.19&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=315%3A292&embed-host=share" allowfullscreen></iframe>
+        </div>
+        <p class="text-head mb-10">After Visit</p>
+        <div class="flex items-center justify-center mb-30">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300" height="700" src="https://embed.figma.com/proto/pCDpLswS4U4hk3eXz2QDs8/MuseoGo---Prototype?page-id=4%3A9&node-id=230-949&p=f&viewport=82%2C32%2C0.19&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=230%3A949&embed-host=share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+<!-- marketing -->
+    <div class="px-5 sm:px-40 justify-center">
+        <p class="text-title mb-10">Marketing</p>
+        <p class="text-body mb-10">I designed and developed the official website for MuseoGo, creating a dynamic platform to introduce the product, highlight its features, and attract more users. The website is now live and actively serving its purpose.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-20">
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/4-1.png" alt="4-1">
+                <p class="text-body">Introduction</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/4-2.png" alt="4-2">
+                <p class="text-body">Features</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/4-3.png" alt="4-3">
+                <p class="text-body">Team</p>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+                <img src="assets/museogo/4-4.png" alt="4-4">
+                <p class="text-body">Join Waitlist</p>
+            </div>
+        </div>
+        <a href="https://museogo.com/" class="flex justify-center mb-30">
+            <button class="px-10 py-5 text-head text-04 bg-01 border-2 border-01 rounded-full hover:text-01 hover:bg-04 cursor-pointer">Visit the Website</button>
+        </a>
+    </div>
+
+<!-- conclusion -->
+    <div class="px-5 sm:px-40 justify-center">
+        <p class="text-title mb-10">Conclusion</p>
+        <p class="text-body mb-10">MuseoGo is a testament to the power of user-centered design in creating meaningful and engaging experiences. By addressing the pain points of museum visitors—parents, kids, and teens—we’ve crafted a solution that seamlessly integrates into their journey, from planning at home to exploring in the museum and reflecting afterward. This project highlights how thoughtful UX design, combined with innovative technology, can transform a traditionally passive experience into an interactive, educational, and enjoyable adventure.</p>
+        <p class="text-head mb-10">Key Takeaways</p>
+        <ul class="text-body mb-30 list-decimal list-inside">
+            <li class="mb-4">Journey Mapping: Breaking down the user journey into three phases—before, during, and after the visit—allowed us to create a holistic experience that addressed pain points at every stage.</li>
+            <li class="mb-4">Gamification for Engagement: Incorporating gamified elements like badges, quizzes, and rewards made the experience fun and motivating, while also reinforcing learning outcomes.</li>
+            <li class="mb-4">AI as a UX Enhancer: The AI companion and personalized features (like custom itineraries and songs) added a layer of interactivity and personalization, making the experience feel tailored and engaging.</li>
+            <li class="mb-4">Visual and Interactive Design: The use of a cute AI character, vibrant visuals, and voice input created an inviting and intuitive interface that appealed to both kids and parents.</li>
+        </ul>
+    </div>
+
+<!-- Other projects -->
+<div class="px-5 sm:px-40 justify-center">
+    <p class="text-title mb-10">Explore More</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-20">
+        <div class="flex flex-col gap-4 px-5 sm:px-0">
+            <a href="pennplace.html"><img src="assets/homepage/pennplace.png" alt="Pennplace" class="rounded-xl cursor-pointer hover:scale-105 transition duration-300"></a>
+            <p class="text-head text-01">Penn Place</p>
+            <p class="text-body">Penn's first-ever collaborative 3D construction platform attracting 30000+ interactions.</p>
+        </div>
+        <div class="flex flex-col gap-4 px-5 sm:px-0">
+            <a href="worldsalon.html"><img src="assets/homepage/worldsalon.png" alt="World Salon" class="rounded-xl cursor-pointer hover:scale-105 transition duration-300"></a>
+            <p class="text-head text-01">World Salon</p>
+            <p class="text-body">The website and mobile app for the social networking platform designed from 0 to 1.</p>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+
+<p class="text-body text-center mb-20"><span class="text-02">Designed</span> and <span class="text-02">Coded</span>  by Yue, 2025</p>
+
+
+
+</body>
