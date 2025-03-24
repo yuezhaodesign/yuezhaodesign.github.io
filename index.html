@@ -1,115 +1,155 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yue Zhao Portfolio</title>
-        <link rel="icon" href="assets/homepage/logo.png" type="image/x-icon">
-        <link href="./style.css" rel="stylesheet">
-      </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yue Zhao Portfolio</title>
+    <link rel="icon" href="assets/homepage/logo.png" type="image/x-icon">
+    <link href="./style.css" rel="stylesheet">
+</head>
 
+<body class="bg-white font-poppins container mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
 
-    <body class="bg-white font-poppins items-center container mx-auto w-max-[1280px]">
+    <!-- navigation bar -->
+    <nav class="w-full px-4 sm:px-6 lg:px-20 h-[10vh] bg-white py-5 flex justify-between items-center fixed top-0 left-0 z-50 shadow-sm">
+        <a href="index.html">
+            <img src="assets/homepage/logo.png" alt="icon" class="w-10 h-10 cursor-pointer hover:opacity-80 transition-opacity">
+        </a>
+        <div class="flex gap-6 md:gap-8">
+            <a href="index.html" class="text-indigo-800 font-semibold hover:text-indigo-600 transition-colors">Home</a>
+            <a href="https://www.linkedin.com/in/yue-zhao-janie" class="text-gray-700 hover:text-indigo-600 transition-colors">LinkedIn</a>
+            <a href="https://codepen.io/yuezhaojanie/pens/showcase" class="text-gray-700 hover:text-indigo-600 transition-colors">CodePen</a>
+            <a href="https://drive.google.com/file/d/1q0cPbAi2airKdiWNVX1CpJ0R-9sKVwN_/view?usp=sharing" class="text-gray-700 hover:text-indigo-600 transition-colors">Resume</a>
+        </div>
+    </nav>
 
-<!-- navigation bar -->
-        <div class="w-full px-20 h-[10vh] bg-white py-5 justify-between items-center flex flex-row fixed top-0 left-0 z-60">
-            <a href="index.html"><img src="assets/homepage/logo.png" alt="icon" class="w-10 h-10 cursor-pointer"></a>
-            <div class="flex-row gap-15 hidden md:flex">
-                <a href="index.html"><p class="cursor-pointer text-head text-01">Home</p></a>
-                <a href="https://www.linkedin.com/in/yue-zhao-janie"><p class="cursor-pointer text-02 text-head hover:text-01">LinkedIn</p></a>
-                <a href="https://codepen.io/yuezhaojanie/pens/showcase"><p class="cursor-pointer text-02 text-head hover:text-01">CodePen</p></a>
-                <a href="https://drive.google.com/file/d/1q0cPbAi2airKdiWNVX1CpJ0R-9sKVwN_/view?usp=sharing"><p class="cursor-pointer text-02 text-head hover:text-01">Resume</p></a>
+    <!-- intro -->
+    <section class="w-full min-h-[90vh] flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12 mt-[10vh] py-12">
+        <div class="w-full sm:w-1/2 flex justify-center">
+            <img src="assets/homepage/background.png" alt="profile" class="w-full max-w-lg">
+        </div>
+        <div class="w-full sm:w-1/2 space-y-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-indigo-800">Hi there, I'm Yue</h1>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                A <span class="font-semibold text-indigo-600">Product Designer & Engineer</span> specialized in <span class="font-semibold text-indigo-600">AI-driven</span> products, passionate about integrating design with code.
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Currently pursuing a Master of Science at Penn. Seeking work opportunities actively. Let's chat!
+            </p>
+            <div class="flex items-center gap-3">
+                <img src="assets/homepage/email.png" alt="email" class="w-6 h-6">
+                <a href="mailto:janie.zhaoy@gmail.com" class="text-lg text-indigo-800 hover:text-indigo-600 transition-colors">janie.zhaoy@gmail.com</a>
             </div>
         </div>
+    </section>
 
-<!-- intro -->
-        <div class="w-full h-[90vh] justify-between items-center flex flex-col sm:flex-row mt-[10vh]">
-            <img src="assets/homepage/background.png" alt="profile" class="w-full sm:w-[60%]">
-            <div class="flex flex-col w-[90%] sm:w-[40%]">
-                <p class="text-title text-01 mb-10">Hi there, I'm Yue</p>
-                <p class="text-body mb-4">A Product Designer & Engineer specialized in <span class="text-02 text-head">AI-driven</span> and <span class="text-02 text-head">EdTech</span> products, passionate about integrating design with code.</p>
-                <p class="text-body mb-10">Currently pursuing a Master of Science at Penn. Seeking work opportunity actively. Let's chat!</p>
-                <div class="flex text-body gap-4">
-                    <img src="assets/homepage/email.png" alt="email" class="w-6 h-6">
-                    <p class="text-body text-01">janie.zhaoy@gmail.com</p>
+    <!-- projects -->
+    <section class="py-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Selected Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <a href="museogo.html">
+                    <img src="assets/homepage/museogo.png" alt="Museogo" class="w-full h-60 sm:h-80 object-cover">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-2">Museogo</h3>
+                    <p class="text-gray-600">The AI-driven website and mobile app for engaging and interactive museum learning experience.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <a href="pennplace.html">
+                    <img src="assets/homepage/pennplace.png" alt="Pennplace" class="w-full h-60 sm:h-80 object-cover">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-2">Penn Place</h3>
+                    <p class="text-gray-600">Penn's first-ever collaborative 3D construction platform attracting 30000+ interactions.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <a href="worldsalon.html">
+                    <img src="assets/homepage/worldsalon.png" alt="World Salon" class="w-full h-60 sm:h-80 object-cover">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-2">World Salon</h3>
+                    <p class="text-gray-600">The website and mobile app for the social networking platform designed from 0 to 1.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <a href="#">
+                    <img src="assets/homepage/skillshare.png" alt="skillshare" class="w-full h-60 sm:h-80 object-cover">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-2">SkillShare Dashboard</h3>
+                    <p class="text-gray-600 italic">Coming Soon...</p>
                 </div>
             </div>
         </div>
+    </section>
 
-<!-- projects -->
-    <p class="text-head py-10 px-5 sm:px-0">Selected Projects</p>
-    <div class="w-full justify-center items-start grid grid-cols-1 sm:grid-cols-2 gap-10 mb-20">
-        <div class="flex flex-col gap-4 px-5 sm:px-0">
-            <a href="museogo.html"><img src="assets/homepage/museogo.png" alt="Museogo" class="rounded-xl cursor-pointer hover:scale-105 transition duration-300"></a>
-            <p class="text-head text-01">Museogo</p>
-            <p class="text-body">The AI-driven website and mobile app for engaging and interactive museum learning experience. </p>
+    <!-- my service -->
+    <section class="py-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">My Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-purple-50 rounded-xl p-8 shadow-md">
+                <div class="flex flex-col items-center">
+                    <img src="assets/homepage/userresearch.png" alt="user research" class="w-20 h-20 mb-4">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">User Research</h3>
+                    <ul class="space-y-2 text-gray-700 pl-5">
+                        <li class="list-disc">Interview & Survey</li>
+                        <li class="list-disc">Competitor Analysis</li>
+                        <li class="list-disc">Personas</li>
+                        <li class="list-disc">User Journey Map</li>
+                        <li class="list-disc">Information Architecture</li>
+                        <li class="list-disc">Accessibility Test</li>
+                        <li class="list-disc">Data Analysis</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-50 rounded-xl p-8 shadow-md">
+                <div class="flex flex-col items-center">
+                    <img src="assets/homepage/productdesign.png" alt="product design" class="w-20 h-20 mb-4">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Product Design</h3>
+                    <ul class="space-y-2 text-gray-700 pl-5">
+                        <li class="list-disc">Website Design</li>
+                        <li class="list-disc">Mobile Design</li>
+                        <li class="list-disc">Interaction Design</li>
+                        <li class="list-disc">Responsive Design</li>
+                        <li class="list-disc">Design System</li>
+                        <li class="list-disc">Graphic Design</li>
+                        <li class="list-disc">Data Visualization</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-indigo-800 rounded-xl p-8 shadow-md">
+                <div class="flex flex-col items-center">
+                    <img src="assets/homepage/programming.png" alt="programming" class="w-20 h-20 mb-4">
+                    <h3 class="text-2xl font-bold text-white mb-4">Development</h3>
+                    <ul class="space-y-2 text-white pl-5">
+                        <li class="list-disc">HTML</li>
+                        <li class="list-disc">CSS</li>
+                        <li class="list-disc">JavaScript</li>
+                        <li class="list-disc">R</li>
+                        <li class="list-disc">Python</li>
+                        <li class="list-disc">Github</li>
+                        <li class="list-disc">Visual Studio Code</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-col gap-4 px-5 sm:px-0">
-            <a href="pennplace.html"><img src="assets/homepage/pennplace.png" alt="Pennplace" class="rounded-xl cursor-pointer hover:scale-105 transition duration-300"></a>
-            <p class="text-head text-01">Penn Place</p>
-            <p class="text-body">Penn's first-ever collaborative 3D construction platform attracting 30000+ interactions.</p>
-        </div>
-        <div class="flex flex-col gap-4 px-5 sm:px-0">
-            <a href="worldsalon.html"><img src="assets/homepage/worldsalon.png" alt="World Salon" class="rounded-xl cursor-pointer hover:scale-105 transition duration-300"></a>
-            <p class="text-head text-01">World Salon</p>
-            <p class="text-body">The website and mobile app for the social networking platform designed from 0 to 1.</p>
-        </div>
-        <div class="flex flex-col gap-4 px-5 sm:px-0">
-            <a href="#"><img src="assets/homepage/skillshare.png" alt="skillshare" class="rounded-xl cursor-pointer hover:scale-105 transition duration-300"></a>
-            <p class="text-head text-01">SkillShare Dashboard</p>
-            <p class="text-body">Coming Soon...</p>
-        </div>
-    </div>
+    </section>
 
-<!-- my service -->
-    <p class="text-head py-10 px-5 sm:px-0">My Service</p>
-    <div class="flex flex-col sm:flex-row items-center gap-10 mb-20">
-        <div class="flex flex-col items-center bg-03 text-black rounded-xl flex-1 py-10 w-[90%]">
-            <img src="assets/homepage/userresearch.png" alt="user research" class="w-25 h-25">
-            <p class="text-title text-black mt-4">User Research</p>
-            <ul class="list-disc mt-4">
-                <li>Interview & Survey</li>
-                <li>Competitor Analysis</li>
-                <li>Personas</li>
-                <li>User Journey Map</li>
-                <li>Information Architecture</li>
-                <li>Accessibility Test</li>
-                <li>Data Analysis</li>
-            </ul>
-        </div>
-        <div class="flex flex-col items-center bg-04 text-black rounded-xl flex-1 py-10 w-[90%]">
-            <img src="assets/homepage/productdesign.png" alt="product design" class="w-25 h-25">
-            <p class="text-title text-black mt-4">Product Design</p>
-            <ul class="list-disc mt-4">
-                <li>Website Design</li>
-                <li>Mobile Design</li>
-                <li>Interaction Design</li>
-                <li>Responsive Design</li>
-                <li>Design System</li>
-                <li>Graphic Design</li>
-                <li>Data Visualization</li>
-            </ul>
-        </div>
-        <div class="flex flex-col items-center bg-01 text-04 rounded-xl flex-1 py-10 w-[90%]">
-            <img src="assets/homepage/programming.png" alt="programming" class="w-25 h-25">
-            <p class="text-title text-04 mt-4">Development</p>
-            <ul class="list-disc mt-4">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>R</li>
-                <li>Python</li>
-                <li>Github</li>
-                <li>Visual Studio Code</li>
-            </ul>
-        </div>
-    </div>
-
-<!-- footer -->
-
-<p class="text-body text-center mb-20"><span class="text-02">Designed</span> and <span class="text-02">Coded</span>  by Yue, 2025</p>
+    <!-- footer -->
+    <footer class="py-12 text-center">
+        <p class="text-gray-600">
+            <span class="font-semibold text-indigo-600">Designed</span> and 
+            <span class="font-semibold text-indigo-600">Coded</span> by Yue, 2025
+        </p>
+    </footer>
 
 </body>
-        
 </html>
-
