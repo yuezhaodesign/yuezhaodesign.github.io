@@ -1,205 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Salon</title>
+        <link rel="icon" href="assets/homepage/logo.png" type="image/x-icon">
+        <link href="./style.css" rel="stylesheet">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yue Zhao Portfolio</title>
-    <link rel="icon" href="assets/icon.png" type="image/x-icon">
-    <link href="./style.css" rel="stylesheet">
-</head>
+    <body class="bg-white max-w-[1280px] justify-between mx-auto">
 
+        <!-- navigation bar -->
+        <nav class="w-full px-4 sm:px-8 lg:px-20 h-[10vh] bg-white py-5 flex justify-between items-center fixed top-0 left-0 z-50 shadow-sm">
+            <a href="index.html">
+                <img src="assets/homepage/logo.png" alt="icon" class="w-10 h-10 cursor-pointer hover:opacity-80 transition-opacity">
+            </a>
+            <div class="flex gap-4 md:gap-8 font-body text-body">
+                <a href="index.html" class="text-textweak hover:text-01 hover:underline">Home</a>
+                <a href="https://github.com/yuezhaodesign" class="text-textweak hover:text-01 hover:underline">Github</a>
+                <a href="https://www.linkedin.com/in/yue-zhao-janie" class="text-textweak hover:text-01 hover:underline">LinkedIn</a>
+                <a href="https://drive.google.com/file/d/1q0cPbAi2airKdiWNVX1CpJ0R-9sKVwN_/view?usp=sharing" class="text-textweak hover:text-01 hover:underline">Resume</a>
+            </div>
+        </nav>
 
-<body class="bg-white font-poppins">
-
-    <!-- navigation bar -->
-    <nav class="w-full px-4 sm:px-6 lg:px-20 h-[10vh] bg-white py-5 flex justify-between items-center fixed top-0 left-0 z-50 shadow-sm">
-        <a href="index.html">
-            <img src="assets/homepage/logo.png" alt="icon" class="w-10 h-10 cursor-pointer hover:opacity-80 transition-opacity">
-        </a>
-        <div class="flex gap-6 md:gap-8">
-            <a href="index.html" class="text-indigo-800 font-semibold hover:text-indigo-600 transition-colors">Home</a>
-            <a href="https://www.linkedin.com/in/yue-zhao-janie" class="text-gray-700 hover:text-indigo-600 transition-colors">LinkedIn</a>
-            <a href="https://codepen.io/yuezhaojanie/pens/showcase" class="text-gray-700 hover:text-indigo-600 transition-colors">CodePen</a>
-            <a href="https://drive.google.com/file/d/1q0cPbAi2airKdiWNVX1CpJ0R-9sKVwN_/view?usp=sharing" class="text-gray-700 hover:text-indigo-600 transition-colors">Resume</a>
+        <div class="mt-[10vh] justify-center items-center flex flex-col gap-4">
+            <img src="assets/coming.jpg" alt="coming soon" class="h-[70vh] justify-items-center mx-auto">
+            <p class="text-body text-textstrong font-body px-4 sm:px-0">I'm working hard on this case study and will update it as soon as possible. Thanks for your patience!</p>
+            <a href="index.html">
+                <button class="bg-textstrong text-white px-6 py-4 font-heading text-h4 font-bold rounded-full cursor-pointer hover:bg-04 hover:text-01">Go to Homepage</button>
+            </a>
         </div>
-    </nav>
-    
-    <!-- intro -->
-    <img src="assets/homepage/worldsalon.png" alt="World Salon" class="w-full mt-[10vh] mb-10 sm:mb-30">
-    <div class="justify-center flex flex-col px-5 sm:px-40 mb-30">
-        <p class="text-5xl sm:text-8xl mb-20 sm:mb-30 font-bold">World Salon</p>
-        <div class="flex flex-col sm:flex-row justify-between gap-y-20">
-            <div class="flex flex-col">
-                <p class="text-head font-bold mb-10">Time Duration</p>
-                <p class="text-body">Jun 2024 - Aug 2024</p>
-            </div>
-            <div class="flex flex-col">
-                <p class="text-head font-bold mb-10">Responsibility</p>
-                <p class="text-body">UX Research</p>
-                <p class="text-body">Web Design</p>
-                <p class="text-body">Mobile Design</p>
-            </div>
-            <div class="flex flex-col">
-                <p class="text-head font-bold mb-10">Team Member</p>
-                <p class="text-body"> 4 Product Designers</p>
-            </div>
-        </div>
-    </div>
+    </body>
 
-    <!-- Research -->
-    <div class="px-5 sm:px-40 justify-center">
-        <p class="text-title mb-10">Research</p>
-        <p class="text-body mb-10">We delievered user interviews among seven users and analyzed their needs and pain points.</p>
-        <img src="assets/worldsalon/interview.jpg" alt="Interview"  class="w-full mb-20 rounded-xl border-1 border-gray-300">
-        <p class="text-head mb-10">For Audiences</p>
-        <ul class="text-body list-decimal list-inside mb-10">
-            <li class="mb-3"><span class="font-bold">Ineffective Event Discovery: </span> Difficulty in finding events that match their interests or schedules.</li>
-            <li><span class="font-bold">Limited Post-Event Networking: </span> Lack of tools to connect with like-minded attendees or maintain relationships after events.</li>
-        </ul>
-        <img src="assets/worldsalon/audience.jpeg" alt="Personas"  class="w-full mb-20 rounded-xl border-1 border-gray-300">
-        <p class="text-head mb-10">For Speakers</p>
-        <ul class="text-body list-decimal list-inside mb-10">
-            <li class="mb-3"><span class="font-bold">Cumbersome Invitation Management: </span>managing and organizing speaking invitations is time-intensive and inefficient.</li>
-            <li><span class="font-bold">Difficulty Understanding Audience Needs: </span>collecting feedback and tailoring content to the audience's preferences requires significant effort.</li>
-        </ul>
-        <img src="assets/worldsalon/speaker.jpeg" alt="Personas"  class="w-full mb-20 rounded-xl border-1 border-gray-300">
-        <p class="text-head mb-10">Competitor Analysis</p>
-        <p class="text-body mb-10">We conducted detailed competitor analysis with other networking and event-hosting app and concluded our opportunities.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-10">
-            <div class="flex flex-col gap-4">
-                <h2 class="text-head text-01">Events Management</h2>
-                <p>1. Create a chat group of all the participants automatically after they join the events, so they can network as early as possible.</p>
-                <p>2. Add some features to encourage participation in online events, like voting, refering friends.</p>
-            </div>
-            <div class="flex flex-col gap-4">
-                <h2 class="text-head text-01">Networking</h2>
-                <p>1. Clear and informative profile contain all the important personal information.</p>
-                <p>2. Multiple ways of networking: in-person events, online speaking, real-time discussion rooms and chat groups.</p>
-                <p>3. Interactions between users: share thoughts, refer events, etc.</p>
-            </div>
-        </div>
-        <img src="assets/worldsalon/competitor.jpg" alt="Personas"  class="w-full mb-30 rounded-xl border-1 border-gray-300">
-    </div>
-
-    <!-- The challenge -->
-    <div class="px-5 sm:px-40 justify-center">
-        <p class="text-title mb-10">The Challenge</p>
-        <p class="text-4xl mb-10">How might we design a more effective event-hosting and networking platform for both speakers and audiences?</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-30">
-            <div class="flex flex-col gap-4">
-                <h2 class="text-head ">Specific Goals</h2>
-                <ul class="list-disc pl-5 text-body">
-                    <li>Increase the event searching efficiency</li>
-                    <li>Manage the invitation smoothly</li>
-                    <li>Further networking after the events</li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-4">
-                <h2 class="text-head ">Networking</h2>
-                <ul class="list-disc pl-5 text-body">
-                    <li>Event search and filter</li>
-                    <li>Invitation management system</li>
-                    <li>Connect and 1-on-1 chat</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Prototype -->
-    <div class="px-5 sm:px-40 justify-center">
-        <p class="text-title mb-10">Feature 1 - Event Discovery</p>
-        <video class="mb-10 rounded-xl border-1 border-gray-300" controls>
-            <source src="assets/worldsalon/feature1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-30">
-            <div class="flex flex-col flex-1 items-center">
-                <img src="assets/worldsalon/feature1-1.jpg" alt="Mobile" class="rounded-md border-1 border-gray-300">
-                <p class="text-body">Homepage</p>
-            </div>
-            <div class="flex flex-col flex-1 items-center">
-                <img src="assets/worldsalon/feature1-2.jpg" alt="Mobile" class="rounded-md border-1 border-gray-300">
-                <p class="text-body">Search</p>
-            </div>
-            <div class="flex flex-col flex-1 items-center">
-                <img src="assets/worldsalon/feature1-3.jpg" alt="Mobile" class="rounded-md border-1 border-gray-300">
-                <p class="text-body">Details</p>
-            </div>
-        </div>
-
-    </div>
-<!-- feature 2 -->
-    <div class="px-5 sm:px-40 justify-center">
-        <p class="text-title mb-10">Feature 2 - Invitation Management</p>
-        <p class="text-body mb-10"><span class="font-bold">For the website interface: </span>the section layout is designed to prioritize features based on their frequency of use, ensuring a more intuitive user experience.</p>
-        <img src="assets/worldsalon/feature2.png" alt="Feature 2" class="w-full mb-10 rounded-xl border-1 border-gray-300">
-        <p class="text-body mb-10"><span class="font-bold">For the mobile interface: </span>The step by step user experience enables speakers to seamlessly accept invitations, review event details and edit Q&A questions with ease.</p>
-        <div class="justify-center flex">
-            <video class="h-200 rounded-xl border-1 border-gray-300 mb-20" controls>
-                <source src="assets/worldsalon/feature2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <p class="text-head mb-10">Problem</p>
-        <p class="text-body mb-10">Speaker engagement is low because speakers are often very busy, and the number of available speakers is limited. To attract more audience and improve engagement, we want speakers to participate more actively in our events.</p>
-        <p class="text-head mb-10">Insight</p>
-        <p class="text-body mb-10">When asked, speakers expressed that they are driven by knowing what the audience thinks about their field, as this can inspire them.</p>
-        <p class="text-head mb-10">Solution</p>
-        <p class="text-body mb-10">To motivate speakers to accept more event invitations, we implemented a new approach. By creating a sense of exclusivity and curiosity, this change encourages speakers to commit while also addressing their desire for audience insights.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-20">
-            <div class="flex flex-col flex-1 items-center">
-                <img  src="assets/worldsalon/before.jpg" alt="Move-mouse" class="rounded-md border-1 border-gray-300">
-                <p class="text-body"><span class="font-bold">Before: </span>Speakers could browse audience questions when deciding whether to attend an event.</p>
-            </div>
-            <div class="flex flex-col flex-1 items-center">
-                <img src="assets/worldsalon/after.jpg" alt="Move-keyboard" class="rounded-md border-1 border-gray-300">
-                <p class="text-body"><span class="font-bold">After: </span>Speakers can no longer browse audience questions unless they accept the event invitation.</p>
-            </div>
-        </div>        
-    </div>
-
-    <!-- feature 3 -->
-    <div class="px-5 sm:px-40 justify-center">
-        <p class="text-title mb-10">Feature 3 - Connect and Chat</p>
-        <div class="flex justify-center mb-30">
-            <video class="h-200 rounded-xl border-1 border-gray-300" controls>
-                <source src="assets/worldsalon/feature3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </div>
-    
-<!-- key takeaways -->
-    <div class="px-5 sm:px-40 justify-center">
-        <p class="text-title mb-10">Key Takeaways</p>
-        <ul class="text-body list-disc list-inside mb-30">
-            <li class="mb-3">Understand users' pain points and identifying opportunities among competitors form the foundation of product innovation and core of effective design.</li>
-            <li class="mb-3">Designers can enhance user engagement by leveraging psychological principles, aligning the products appeal with its business goal.</li>
-            <li class="mb-3">For mobile interfaces, the limited screen size necessitates a concise design that highlights the most essential information, ensuring clarity and focus for users.</li>
-        </ul>
-    </div>
-
-    <!-- Other projects -->
-    <div class="px-5 sm:px-40 justify-center">
-        <p class="text-title mb-10">Explore More</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-20">
-            <div class="flex flex-col gap-4 px-5 sm:px-0">
-                <a href="museogo.html"><img src="assets/homepage/museogo.png" alt="Museogo" class="rounded-xl cursor-pointer hover:scale-105 transition duration-300"></a>
-                <p class="text-head text-01">Museogo</p>
-                <p class="text-body">The AI-driven website and mobile app for engaging and interactive museum learning experience. </p>
-            </div>
-            <div class="flex flex-col gap-4 px-5 sm:px-0">
-                <a href="pennplace.html"><img src="assets/homepage/pennplace.png" alt="Pennplace" class="rounded-xl cursor-pointer hover:scale-105 transition duration-300"></a>
-                <p class="text-head text-01">Penn Place</p>
-                <p class="text-body">Penn's first-ever collaborative 3D construction platform attracting 30000+ interactions.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- footer -->
-
-    <p class="text-body text-center mb-20"><span class="text-02">Designed</span> and <span class="text-02">Coded</span>  by Yue, 2025</p>
-
-</body>
 </html>
