@@ -61,8 +61,8 @@
             <h2 class="text-h2 font-heading text-textstrong font-bold text-center mt-30">Overview</h2>
             <h3 class="text-h3 font-heading text-textstrong font-bold mt-12">Problem statement</h3>
             <p class="text-body font-body text-textstrong mt-8">As 3D models continue to grow in popularity, the process of creating them remains complex, requiring significant expertise and specialized skills. Additionally, many 3D construction software platforms, such as Blender and SketchUp, lack support for real-time collaborative editing. Our team aims to make 3D construction more accessible and enjoyable for users of all skill levels, enabling them to collaborate seamlessly and create in real time.</p>
-            <p class="text-body font-body text-textstrong mt-4 font-bold bg-03 rounded-lg p-4">1. How might we make 3D construction easy and accessible for users of all skill levels?</p>
-            <p class="text-body font-body text-textstrong mt-4 font-bold bg-04 rounded-lg p-4">2. How might we enable users to collaborate seamlessly and create in real time?
+            <p class="text-body bg-03 p-4 rounded-b-md font-body text-textstrong mt-4 font-bold ">1. How might we make 3D construction easy and accessible for users of all skill levels?</p>
+            <p class="text-body font-body text-textstrong bg-03 p-4 rounded-b-md mt-4 font-bold">2. How might we enable users to collaborate seamlessly and create in real time?
             </p>
 
             <h3 class="text-h3 font-heading text-textstrong font-bold mt-12">Solutions</h3>
@@ -75,7 +75,7 @@
             </flex>
             <flex class="flex flex-col sm:flex-row mt-8 justify-evenly items-center gap-8">
                 <img src="assets/pennplace/movemode.png" alt="before visit" class="sm:w-2/3 h-auto rounded-lg">
-                <flex class="flex-col w-1/3">
+                <flex class="flex-col sm:w-1/3">
                     <h2 class="text-h2 font-heading text-textstrong font-bold">Move Mode</h2>
                     <p class="text-body font-body text-textstrong mt-8">In 'Move Mode', users can navigate the models from different views, as well as zoom in and zoom out using the mouse and keyboard.</p>
                 </flex>
@@ -99,6 +99,76 @@
                 <button class="bg-textstrong text-white px-6 py-4 font-heading text-h4 font-bold rounded-full cursor-pointer hover:bg-04 hover:text-01">Visit the website</button>
             </a>
 
+            <h2 class="text-h2 font-heading text-textstrong font-bold text-center mt-30">Design</h2>
+            <h3 class="text-h3 font-heading text-textstrong font-bold mt-12">Highlight 1: Alternative interation methods</h3>
+            <p class="text-body font-body text-textstrong mt-8">For the same interaction, we allow users to complete the action using either the keyboard or mouse independently, accommodating different user preferences and device contexts.</p>
+            <h4 class="text-h4 font-heading font-bold text-textstrong mt-8">Move</h4>
+            <flex class="flex flex-col sm:flex-row mt-6 gap-4">
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/move-m.gif" alt="Use mouse to move" class="">
+                    <p class="text-body font-body text-textstrong mt-4"><span class="font-bold">Mouse:</span> Press to navigate the view of the model</p>
+                </flex>
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/move-k.gif" alt="Use keyboard to move" class="">
+                    <p class="text-body font-body text-textstrong mt-4"><span class="font-bold">Keyboard:</span> Use the Up, Down, Left, and Right arrow keys to navigate</p>
+                </flex>
+            </flex>
+
+            <h4 class="text-h4 font-heading font-bold text-textstrong mt-8">Zoom</h4>
+            <flex class="flex flex-col sm:flex-row mt-6 gap-4">
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/zoom-m.gif" alt="Use mouse to move" class="">
+                    <p class="text-body font-body text-textstrong mt-4"><span class="font-bold">Mouse:</span> Use the Zoom In and Zoom Out buttons to zoom</p>
+                </flex>
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/zoom-k.gif" alt="Use keyboard to move" class="">
+                    <p class="text-body font-body text-textstrong mt-4"><span class="font-bold">Keyboard:</span> Touch the panel to zoom</p>
+                </flex>
+            </flex>
+
+            <h3 class="text-h3 font-heading text-textstrong font-bold mt-12">Highlight 2: Simplied user flow after testing</h3>
+            <p class="text-body font-body text-textstrong mt-8">After testing, we simplified the user flow by automatically switching to 'Build Mode' when users click on the color palette while in 'Move Mode'. Our research showed that once users finish viewing the model and intend to continue building, it's intuitive for them to select a color directly, rather than manually switching modes. This refinement significantly reduces interaction cost and enhances the overall experience. </p>
+            <flex class="flex flex-col sm:flex-row mt-6 gap-4">
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/before.gif" alt="Use mouse to move" class="">
+                    <p class="text-body font-body text-textstrong mt-4"><span class="font-bold">Before:</span> Finish the viewing → Switch the mode manually → Choose the color → Continue building</p>
+                </flex>
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/after.gif" alt="Use keyboard to move" class="">
+                    <p class="text-body font-body text-textstrong mt-4"><span class="font-bold">After:</span> Finish the viewing → Choose the color (mode switched automatically) → Continue building</p>
+                </flex>
+            </flex>
+
+            <h3 class="text-h3 font-heading text-textstrong font-bold mt-12">Highlight 3: Responsive design on mobile devices</h3>
+            <p class="text-body font-body text-textstrong mt-8">We designed the interface to be responsive on mobile devices, ensuring that users can easily navigate and interact with the 3D models using touch gestures. This design choice enhances accessibility and usability, allowing users to engage with the application seamlessly across different devices.</p>
+            <flex class="flex flex-col sm:flex-row gap-8 mt-6">
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/mobile-1.png" alt="mobile main interface" class="border-2 border-strokestrong rounded-lg">
+                    <p class="text-body font-body text-textstrong mt-4">The main page on the mobile devices to build and view the 3D models  </p>
+                </flex>
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/mobile-2.png" alt="mobile color pallete" class="border-2 border-strokestrong rounded-lg">
+                    <p class="text-body font-body text-textstrong mt-4">The color pallete is on a seperate page considering the screen size </p>
+                </flex>
+                <flex class="flex flex-col flex-1">
+                    <img src="assets/pennplace/mobile-3.png" alt="recommend the user to use PC " class="border-2 border-strokestrong rounded-lg">
+                    <p class="text-body font-body text-textstrong mt-4">We recommend users to use the laptop because it can provide the best user experience</p>
+                </flex>
+            </flex>
+
+            <h3 class="text-h3 font-heading text-textstrong font-bold mt-12">Highlight 4: Marketing graphic design</h3>
+            <p class="text-body font-body text-textstrong mt-8">I designed marketing materials in various formats for our product, including posters, flyers, and banners. These were shared on social media and distributed on campus to attract more users and increase product engagement.</p>
+            <img src="assets/pennplace/marketing.png" alt="marketing materials" class="w-full h-auto rounded-lg mt-6">
+
+
+            <h2 class="text-h2 font-heading text-textstrong font-bold text-center mt-30">Conclusion</h2>
+            <p class="text-body font-body text-textstrong mt-4">Penn Place is a creative project designed to make 3D construction more accessible for beginners. In some ways, it’s like a simplified Minecraft for live, collaborative creation. Users love it because they can build together on the same model or remix others’ creations just for fun. Their creativity and enthusiasm for 3D building shine through—and often spark deeper exploration in this space. I’m grateful to be part of a talented team of designers and developers, collaborating to brainstorm, iterate, and experiment with the product.</p>
+            <h3 class="text-h3 font-heading text-textstrong font-bold mt-12">Key takeaways</h3>
+            <ul class="list-disc list-inside text-textstrong font-body text-body mt-4 leading-10 mb-30">
+                <li>Don’t be Afraid to Explore New Fields: Few team members had prior experience in designing or developing 3D construction tools, but that didn’t stop us from making it work. Through regular brainstorming sessions and problem-solving, we turned a rough idea into a feasible and functional product.</li>
+                <li>Cross-functional Collaboration is Essential: Building our product required close collaboration across design and development. Interaction design needed to be both user-friendly and technically feasible, so we worked closely as a team to iterate together and ensure our design decisions were practical and implementable.</li>
+                <li>Accessibility Brings More Users in: Initially, our product was designed for computers, as building 3D models is more intuitive on a larger screen with a mouse and keyboard. However, before launch, we also created a mobile-friendly version. We realized that most users would discover our product by scanning posters with their phones, so it was crucial they could access it instantly—and transition to desktop later if needed.</li>
+            </ul>
         </div>
 
         <h3 class="text-h3 font-heading text-textstrong font-bold mt-12">Explore other projects</h3>
@@ -132,6 +202,7 @@
                         </div>
                     </div>
                     </a>
+                    
         </div>
         
         
